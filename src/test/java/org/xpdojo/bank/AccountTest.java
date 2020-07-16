@@ -57,7 +57,12 @@ public class AccountTest {
         testAccount.printReport();
         Assertions.assertTrue(testAccount.getBalance()==100.0 );
     }
-
+    @Test
+    public  void printBalanceReport() {
+        Account testAccount = new Account("11111", 100);
+        testAccount.printBalanceReport();
+        Assertions.assertTrue(testAccount.getBalance()==100.0 );
+    }
 
 
 
