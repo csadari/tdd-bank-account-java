@@ -52,7 +52,7 @@ public class AccountTest {
     }
 
     @Test
-    public  void printBalance() {
+    public  void printAcitivity() {
         Account testAccount = new Account("11111", 100);
         testAccount.printReport();
         Assertions.assertTrue(testAccount.getBalance()==100.0 );
