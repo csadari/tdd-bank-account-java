@@ -22,6 +22,19 @@ public class AccountTest {
         //assertThat("your first test").isBlank();
         System.out.println("Your first test case goes here");
     }
+    public void depositMultipleAmountToIncreaseTheBalance() {
+        // assertThat("your first test").isBlank();
+
+        Account testAccount = new Account("11111", 100);
+        //assertThat("your GEE first test isn't implemented", true, is(false));
+        testAccount.depositAmount(50);
+        testAccount.depositAmount(70);
+        Assertions.assertTrue(testAccount.getBalance()==120.0);
+
+        testAccount.printReport();
+        //assertThat("your first test").isBlank();
+        System.out.println("Your first test case goes here");
+    }
     @Test
     //@Disabled
     public void withdrawAnAmountToDecreaseTheBalance() {
