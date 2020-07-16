@@ -60,5 +60,12 @@ public class Account {
             toAccount.depositAmount(transferAmount);
         }
     }
-
+    public  void filterActivity(String filterActivity)
+    {
+      //  if (thia.transactionActivity == filterActivity)
+        //{
+          //  System.out.printkn("Found the Activity");
+          //  this.printReport ();
+       // }
+    }
 }

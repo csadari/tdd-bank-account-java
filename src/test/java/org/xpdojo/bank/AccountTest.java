@@ -63,7 +63,6 @@ public class AccountTest {
         Assertions.assertTrue(fromAccount.getBalance()==100.0 && toAccount.getBalance()==150.0);
 
     }
-
     @Test
     public  void printAcitivity() {
         Account testAccount = new Account("11111", 100);
@@ -75,6 +74,13 @@ public class AccountTest {
         Account testAccount = new Account("11111", 100);
         testAccount.printBalanceReport();
         Assertions.assertTrue(testAccount.getBalance()==100.0 );
+    }
+    @Test
+    public  void filterActivity() {
+        Account testAccount = new Account("11111", 100);
+        testAccount.depositAmount(50);
+      //  testAccount.filterActivity("Deposit");
+       // Assertions.assertTrue(testAccount.getBalance()==100.0 );
     }
 
 
